@@ -8,7 +8,7 @@ public class GruppSpeedAuctionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GruppSpeedAuctionApplication.class, args);
-		// hej hej
+		// Hejdå
 	}
 
 }
