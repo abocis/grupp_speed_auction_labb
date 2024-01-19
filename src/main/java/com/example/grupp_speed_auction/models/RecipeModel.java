@@ -1,11 +1,9 @@
 package com.example.grupp_speed_auction.models;
 
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.lang.reflect.Array;
-import java.util.Date;
 
 @Document(collection = "Recept")
 public class RecipeModel {
@@ -16,8 +14,7 @@ public class RecipeModel {
     private String title;
     private Array ingrediens;
     private String instructions;
-    @CreatedDate
-    private Date time;
+    private String time;
 
     public RecipeModel() {
 
@@ -55,11 +52,11 @@ public class RecipeModel {
         this.instructions = instructions;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }
