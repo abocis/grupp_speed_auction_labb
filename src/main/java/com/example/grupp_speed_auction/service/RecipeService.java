@@ -10,6 +10,7 @@ public class RecipeService {
     @Autowired
     ReceptRepo receptRepo;
 
+    //comment
     public RecipeModel createRecipeModel(RecipeModel recipeModel) {
         return receptRepo.save(recipeModel);
     }
