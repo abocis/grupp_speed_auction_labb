@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RecipeService {
+
     @Autowired
     ReceptRepo receptRepo;
 

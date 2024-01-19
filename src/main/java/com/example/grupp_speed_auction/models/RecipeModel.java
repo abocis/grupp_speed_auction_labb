@@ -3,8 +3,6 @@ package com.example.grupp_speed_auction.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.lang.reflect.Array;
-
 @Document(collection = "Recept")
 public class RecipeModel {
 
@@ -12,9 +10,9 @@ public class RecipeModel {
     @Id
     private String id;
     private String title;
-    private Array ingrediens;
+    //private Array ingrediens;
     private String instructions;
-    private String time;
+    //private String time;
 
     public RecipeModel() {
 
@@ -36,13 +34,15 @@ public class RecipeModel {
         this.title = title;
     }
 
-    public Array getIngrediens() {
+    /*public Array getIngrediens() {
         return ingrediens;
     }
 
     public void setIngrediens(Array ingrediens) {
         this.ingrediens = ingrediens;
     }
+
+     */
 
     public String getInstructions() {
         return instructions;
@@ -52,11 +52,13 @@ public class RecipeModel {
         this.instructions = instructions;
     }
 
-    public String getTime() {
+   /* public String getTime() {
         return time;
     }
 
     public void setTime(String time) {
         this.time = time;
     }
+
+    */
 }
